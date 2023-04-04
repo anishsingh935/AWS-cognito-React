@@ -7,6 +7,7 @@ import mobileLogo from "../images/mobileLogo.svg"
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { useNavigate } from 'react-router-dom';
 import "./NavBarSyles.css"
 import SnackbarFile from "./SnackbarFile"
 
@@ -18,7 +19,7 @@ import AWS from 'aws-sdk';
 
 
 AWS.config.update({
-    region: 'your-region'
+    region: 'us-east-1'
   });
 
 
@@ -71,6 +72,7 @@ const Signup = () => {
     const [passwordError, setPasswordError] = useState('');
     const [open,setOpen]= useState(false);
     const [globalmsg , setGlobalmsg] = useState("");
+    const history = useNavigate()
   
     const handleNameChange = (event) => {
       setName(event.target.value);
@@ -130,6 +132,9 @@ const Signup = () => {
             }
             else{
                 setGlobalmsg("Succesfully Data added")
+                setTimeout(() => {
+                  history("/thankyou")
+                }, 1000);
             }
         }
         else{
@@ -159,21 +164,21 @@ const Signup = () => {
                         <div className="inputBox">
                             <span className="labelHeading">Name</span>
                             <div >
-                                    <TextField  value={name} onChange={handleNameChange} id="outlined-basic" label="Name" variant="outlined" />
+                                    <TextField  inputProps={{ style: { marginLeft: '30px' } }}   value={name} onChange={handleNameChange} id="outlined-basic" label="Name" variant="outlined" />
                                     {nameError && <span className="error">{nameError}</span>}
                             </div>
                         </div>
                         <div className="inputBox">
                             <span className="labelHeading">Email</span>
                             <div >
-                                <TextField value={email}onChange={handleEmailChange} id="outlined-basic" label="Email" variant="outlined" />
+                                <TextField inputProps={{ style: { marginLeft: '30px' } }} value={email}onChange={handleEmailChange} id="outlined-basic" label="Email" variant="outlined" />
                                 {emailError && <span className="error">{emailError}</span>}
                             </div>
                         </div>
                         <div className="inputBox">
                             <span className="labelHeading">Password</span>
                             <div >
-                                <TextField value={password} onChange={handlePasswordChange}  type="password"id="outlined-basic" label="Password" variant="outlined" />
+                                <TextField inputProps={{ style: { marginLeft: '30px' } }} value={password} onChange={handlePasswordChange}  type="password"id="outlined-basic" label="Password" variant="outlined" />
                                 {passwordError && <span className="error">{passwordError}</span>}
                             </div>
                         </div>

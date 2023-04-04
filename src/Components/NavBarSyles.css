@@ -43,7 +43,13 @@ nav {
     letter-spacing: 0px;
     text-align: center;
     border: none;
+    cursor: pointer;
 
+}
+.signUp_btn:hover{
+    background-color: #ECECF2;
+    border: 2px solid #FDBC2A;
+    color: #FDBC2A;
 }
 
 #navbar {
@@ -74,7 +80,10 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background: #fdbc2a;
+    /* background: #ffffff; */
+    /* color: #FDDE69; */
+    /* border: 1px solid #FDDE69; */
+    cursor: pointer;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -197,7 +206,7 @@ color: #1C1D21;
 .buttonClassText{
     font-style: normal;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 14px;
     text-transform: capitalize;
     line-height: 20px;
     /* identical to box height, or 143% */
@@ -275,6 +284,22 @@ color: #1C1D21;
     background: white;
     justify-content: space-between;
 }
+
+.thankyouParentClass{
+    width: 55vw;
+    height: 75vh;
+    left: 20%;
+    top: 20%;
+    position: absolute;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: white;
+    justify-content: space-between;
+}
 .logostyle{
     display: flex;
     flex-direction: row;
@@ -310,10 +335,18 @@ color: #1C1D21;
     .parentClass{
         width: 100vw;
         left: 0%;
-    top: 30;
-    position: absolute;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+        top: 30;
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .thankyouParentClass{
+        width: 100vw;
+        left: 0%;
+        top: 30;
+        position: absolute;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px; 
     }
     .logostyle{
         display: none;
@@ -343,3 +376,17 @@ color: #1C1D21;
     }
 
 }
+
+
+.thankyouCss{
+    align-items: center;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    margin-top: 25%;
+    width: 65%;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 19px;
+}
+

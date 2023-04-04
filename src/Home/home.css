@@ -465,8 +465,14 @@ body {
     top: 247.24002075195312px;
     border-radius: 9.772332191467285px;
     border: none;
+    cursor: pointer;
     background-color: #FDBC2A;
     margin-top: 14%;
+}
+.home__footer__rightSide button:hover{
+    background-color: #ECECF2;
+    border: 2px solid #FDBC2A;
+    color: #FDBC2A;
 }
 
 .home__footer__copyRight {
