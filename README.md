@@ -11,8 +11,6 @@ This is a sample React application that demonstrates user authentication using A
 Before you begin, ensure you have the following prerequisites:
 
 
-https://github.com/anishsingh935/AWS-cognito-React/assets/75081988/6972e8c7-df49-4205-a717-fee355e48f19
-
 
 - AWS Account: You need an AWS account to set up and configure Cognito.
 - Node.js and npm: Make sure you have Node.js and npm installed on your local machine.
