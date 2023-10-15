@@ -19,7 +19,7 @@ class NavBar extends Component {
           <div className="navbar1_div">
             <ul id="navbar" className={this.state.clicked ? "#navbar active" : "#navbar deactive"}>
               <li className="li_developer_docs">
-                <a href="index.html">Developer Docs</a>
+                <a href="/">Developer Docs</a>
               </li>
               <Link to="/signup">
 

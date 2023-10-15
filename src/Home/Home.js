@@ -43,7 +43,6 @@ const Home = () => {
                                 </p>
                                 <Button
                                     bsPrefix="home__getStarted"
-                                    onClick={() => history("/register")}
                                 >Get Started</Button>
                             </div>
                             {/* </Col> */}
